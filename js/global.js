@@ -10,6 +10,7 @@ $( document ).ready(function() {
 	//SETTING UP RATE FOR CONVERSION
 	var exchangeRate = 1.4;
 	$('#rate').text(exchangeRate);
+	$('#rate-mobile').text(exchangeRate);
 
 	//CHANGING RECEIVED FIELD VALUE BASED ON INPUT - DEFAULT EUR in USD
 	$('.trans-send-container').on('keyup','#setAmount',function(){
@@ -19,18 +20,27 @@ $( document ).ready(function() {
 		$('#getAmount').val(conversed.toFixed(2));
 		//UPDATING SIDEBAR WITH VALUES
 		$('#rightSendingAmount').text(enteredAmount);
+		$('#rightSendingAmountMobile').text(enteredAmount);
 		var receivingAmount = $('#getAmount').val();
 		$('#rightReceivingAmount').text(receivingAmount);
+		$('#rightReceivingAmountMobile').text(receivingAmount);
 		$('#saved-amount').text(savedAmount);
+		$('#saved-amount-mobile').text(savedAmount);
 	});
 	//CONVERSION IN CASE THAT USER ENTERS RECEIVING AMOUNT FIRST
 	$('.trans-gets-container').on('keyup','#getAmount',function(){
 		var receivingAmountInput = $('#getAmount').val();
 		$('#rightReceivingAmount').text(receivingAmountInput);
+		$('#rightReceivingAmountMobile').text(receivingAmountInput);
 		var counterInputValue = receivingAmountInput / exchangeRate;
 		//UPDATING SIDEBAR WITH VALUES
 		$('#rightSendingAmount').text(counterInputValue.toFixed(2));
 		$('#setAmount').val(counterInputValue.toFixed(2));
+		$('#rightSendingAmountMobile').text(counterInputValue.toFixed(2));
+		$('#setAmountMobile').text(counterInputValue.toFixed(2));
+		var savedAmountCounter = (counterInputValue * 0.1).toFixed(2);
+		$('#saved-amount').text(savedAmountCounter);
+		$('#saved-amount-mobile').text(savedAmountCounter);
 	});
 	//END UPDATING SIDEBAR WITH VALUES
 
@@ -61,6 +71,7 @@ $( document ).ready(function() {
 	var monthName = monthNames[currentMonth] ;
 	var deliveryDate = currentDate+2;
 	$('#delivery-date-right').text(deliveryDate+'th '+monthName);
+	$('#delivery-date-right-mobile').text(deliveryDate+'th '+monthName);
 
 	var gbpSign = "£";
 	var cadSign = "$";
@@ -97,25 +108,37 @@ $( document ).ready(function() {
 			$('.outputCurrencySelect').parent().parent().find('.output-currency-sign').html(gbpSign);
 			$('#sidebar-output-sign').html(gbpSign);
 			$('#sidebar-output-sign-fee').html(gbpSign);
+			$('#sidebar-output-sign-fee-mobile').html(gbpSign);
 			$('#sidebar-output-sign-last').html(gbpSign);
+			$('#sidebar-output-sign-last-mobile').html(gbpSign);
+			$('#sidebar-output-sign-mobile').html(gbpSign);
 		} else if(country == "cad"){
 			$('.outputCurrencySelect').css('background','url(img/cad-flag.png) top 14px left 14px no-repeat');
 			$('.outputCurrencySelect').parent().parent().find('.output-currency-sign').html(cadSign);
 			$('#sidebar-output-sign').html(cadSign);
 			$('#sidebar-output-sign-fee').html(cadSign);
+			$('#sidebar-output-sign-fee-mobile').html(cadSign);
 			$('#sidebar-output-sign-last').html(cadSign);
+			$('#sidebar-output-sign-last-mobile').html(cadSign);
+			$('#sidebar-output-sign-mobile').html(cadSign);
 		} else if(country == "usd"){
 			$('.outputCurrencySelect').css('background','url(img/usa-flag.png) top 14px left 14px no-repeat');
 			$('.outputCurrencySelect').parent().parent().find('.output-currency-sign').html(usdSign);
 			$('#sidebar-output-sign').html(usdSign);
 			$('#sidebar-output-sign-fee').html(usdSign);
+			$('#sidebar-output-sign-fee-mobile').html(usdSign);
 			$('#sidebar-output-sign-last').html(usdSign);
+			$('#sidebar-output-sign-last-mobile').html(usdSign);
+			$('#sidebar-output-sign-mobile').html(usdSign);
 		} else {
 			$('.outputCurrencySelect').css('background','url(img/eur-flag.png) top 14px left 14px no-repeat');
 			$('.outputCurrencySelect').parent().parent().find('.output-currency-sign').html(eurSign);
 			$('#sidebar-output-sign').html(eurSign);
 			$('#sidebar-output-sign-fee').html(eurSign);
+			$('#sidebar-output-sign-fee-mobile').html(eurSign);
 			$('#sidebar-output-sign-last').html(eurSign);
+			$('#sidebar-output-sign-last-mobile').html(eurSign);
+			$('#sidebar-output-sign-mobile').html(eurSign);
 		}
 	});
 	//END CHANGING COUNTRY FLAGS ON RECEIVER FIELD
