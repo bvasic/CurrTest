@@ -1,0 +1,1277 @@
+/*SCREEN SIZES*/
+/*MAIN COLOURS*/
+/*BACKGROUND*/
+/*FONT COLORS*/
+/*TRANSACTION MENU*/
+@font-face {
+  font-family: 'PostGrotesk-Bold';
+  src: url("../fonts/post-grotesk/PostGrotesk-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/post-grotesk/PostGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-Bold.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-Bold.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-Bold.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-Bold.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'PostGrotesk-BoldItalic';
+  src: url("../fonts/post-grotesk/PostGrotesk-BoldItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/post-grotesk/PostGrotesk-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-BoldItalic.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-BoldItalic.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-BoldItalic.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-BoldItalic.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'PostGrotesk-Book';
+  src: url("../fonts/post-grotesk/PostGrotesk-Book.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/post-grotesk/PostGrotesk-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-Book.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-Book.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-Book.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-Book.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'PostGrotesk-BookItalic';
+  src: url("../fonts/post-grotesk/PostGrotesk-BookItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/post-grotesk/PostGrotesk-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-BookItalic.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-BookItalic.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-BookItalic.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-BookItalic.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'PostGrotesk-Light';
+  src: url("../fonts/post-grotesk/PostGrotesk-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/post-grotesk/PostGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-Light.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-Light.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-Light.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-Light.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'PostGrotesk-LightItalic.eot';
+  src: url("../fonts/post-grotesk/PostGrotesk-LightItalic.eot.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/post-grotesk/PostGrotesk-LightItalic.eot.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-LightItalic.eot.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-LightItalic.eot.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-LightItalic.eot.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-LightItalic.eot.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'PostGrotesk-Medium';
+  src: url("../fonts/post-grotesk/PostGrotesk-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/post-grotesk/PostGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-Medium.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-Medium.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-Medium.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-Medium.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'PostGrotesk-MediumItalic.eot';
+  src: url("../fonts/post-grotesk/PostGrotesk-MediumItalic.eot.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/post-grotesk/PostGrotesk-MediumItalic.eot.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-MediumItalic.eot.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-MediumItalic.eot.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-MediumItalic.eot.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-MediumItalic.eot.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+body {
+  background: #ffffff;
+  font-family: 'PostGrotesk-Light';
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(to right, #ffffff, #ffffff 50%, #fbfbfb 50%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /*BACKGROUND CHANGE ON MOBILE*/ }
+  @media screen and (max-width: 767px) {
+    body {
+      background: #fbfbfb; } }
+
+/* DESKTOP VERSION */
+@media screen and (min-width: 1200px) {
+  .main-container {
+    font-size: 14px;
+    /* HEADER */
+    /* MAIN CONTENT */ }
+    .main-container .header-container {
+      position: fixed;
+      top: 0;
+      z-index: 99;
+      width: 100%;
+      background-color: #32323c;
+      height: 75px; }
+      .main-container .header-container .header {
+        width: 1024px;
+        height: inherit;
+        margin-left: auto;
+        margin-right: auto; }
+        .main-container .header-container .header .logo {
+          background: url("../img/logo.png");
+          width: 173px;
+          height: 75px;
+          float: left; }
+          .main-container .header-container .header .logo a {
+            width: 100%;
+            height: 100%;
+            display: block; }
+    .main-container .main-content-holder {
+      width: 1024px;
+      margin-left: auto;
+      margin-right: auto;
+      display: table;
+      height: 100%;
+      padding-top: 75px;
+      /* RECEIVING DETAILS VISIBLE ONLY ON MOBILE */ }
+      .main-container .main-content-holder .main-left-container {
+        display: table-cell;
+        width: 60%;
+        background: #ffffff;
+        margin: 0;
+        padding: 0;
+        float: left;
+        height: 100%;
+        /* CONVERSION FORM */
+        /* CONVERSION FORM END*/ }
+        .main-container .main-content-holder .main-left-container .transaction-panel {
+          padding: 40px; }
+          .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav {
+            height: 60px; }
+            .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul {
+              padding-left: 0; }
+              .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li {
+                float: left;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 14px;
+                font: inherit;
+                vertical-align: baseline;
+                list-style: none;
+                font-weight: bold;
+                color: #b0bec5;
+                width: 33%;
+                border-bottom: 4px solid #e2f2fa;
+                cursor: pointer; }
+                .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li .step-no {
+                  margin: 10px 10px 0 30px;
+                  font-size: 11px; }
+                .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li .step-desc {
+                  margin: 5px 10px 10px 30px;
+                  font-size: 13px; }
+              .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:first-child {
+                float: left;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 16px;
+                font: inherit;
+                vertical-align: baseline;
+                list-style: none;
+                font-weight: bold;
+                color: #6ec0e6;
+                width: 33%;
+                border-bottom: 4px solid #6ec0e6;
+                cursor: pointer; }
+                .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:first-child .step-no {
+                  margin: 10px 10px 0 30px;
+                  font-size: 11px; }
+                .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:first-child .step-desc {
+                  margin: 5px 10px 10px 30px;
+                  font-size: 13px; }
+              .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:hover {
+                float: left;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 16px;
+                font: inherit;
+                vertical-align: baseline;
+                list-style: none;
+                font-weight: bold;
+                color: #6ec0e6;
+                width: 33%;
+                border-bottom: 4px solid #6ec0e6;
+                cursor: pointer;
+                transition: 0.3s ease; }
+                .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:hover .step-no {
+                  margin: 10px 10px 0 30px;
+                  font-size: 11px; }
+                .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:hover .step-desc {
+                  margin: 5px 10px 10px 30px;
+                  font-size: 13px; }
+        .main-container .main-content-holder .main-left-container .trans-title {
+          padding: 30px 30px 20px 0;
+          font-family: 'PostGrotesk-Book';
+          font-size: 15px;
+          color: #797979;
+          margin-bottom: 0px; }
+          .main-container .main-content-holder .main-left-container .trans-title p:first-child {
+            font-family: 'PostGrotesk-Bold';
+            font-size: 18px;
+            color: #212121;
+            margin-bottom: 0; }
+        .main-container .main-content-holder .main-left-container .trans-form {
+          /*DROPDOWN COUNTRIES INPUT*/ }
+          .main-container .main-content-holder .main-left-container .trans-form .trans-send-container {
+            background: #fafdfe;
+            padding: 0;
+            border: 2px solid #6ec0e6;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            box-shadow: none;
+            height: 120px; }
+            .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left {
+              width: 60%;
+              float: left;
+              padding: 25px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left .send-left-label {
+                color: #6ec0e6;
+                font-family: 'PostGrotesk-Medium';
+                font-size: 16px;
+                margin-bottom: 10px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left .send-left-input {
+                height: 40px; }
+                .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left .send-left-input .input-currency-sign {
+                  font-size: 25px; }
+                .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left .send-left-input .input-amount {
+                  width: 90%;
+                  height: 100%;
+                  font-size: 25px;
+                  border: 0;
+                  background: transparent;
+                  outline: none; }
+            .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right {
+              width: 20%;
+              float: right;
+              padding-top: 35px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right select {
+                width: 90px;
+                height: 50px;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                font-family: 'PostGrotesk-Bold';
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-align: right;
+                padding-left: 45px;
+                cursor: pointer;
+                background: url("../img/eur-flag.png") top 14px left 14px no-repeat; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right select:hover {
+                outline: 0; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right select:focus {
+                outline: 0; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right select::-ms-expand {
+                display: none; }
+          .main-container .main-content-holder .main-left-container .trans-form .trans-send-container:hover {
+            background: #fafdfe;
+            border: 2px solid #6ec0e6; }
+          .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container {
+            padding: 0;
+            border-left: 2px solid #e6e6e6;
+            border-right: 2px solid #e6e6e6;
+            border-bottom: 2px solid #e6e6e6;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            box-shadow: none;
+            height: 120px; }
+            .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left {
+              width: 60%;
+              float: left;
+              padding: 25px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left .send-left-label {
+                color: #6ec0e6;
+                font-family: 'PostGrotesk-Medium';
+                font-size: 16px;
+                margin-bottom: 10px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left .send-left-input {
+                height: 40px; }
+                .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left .send-left-input .output-currency-sign {
+                  font-size: 25px; }
+                .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left .send-left-input .input-amount {
+                  width: 90%;
+                  height: 100%;
+                  font-size: 25px;
+                  border: 0;
+                  background: transparent;
+                  outline: none; }
+            .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right {
+              width: 20%;
+              float: right;
+              padding-top: 35px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right select {
+                width: 90px;
+                height: 50px;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                font-family: 'PostGrotesk-Bold';
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-align: right;
+                padding-left: 45px;
+                cursor: pointer;
+                background: url("../img/eur-flag.png") top 14px left 14px no-repeat; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right select:hover {
+                outline: 0; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right select:focus {
+                outline: 0; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right select::-ms-expand {
+                display: none; }
+          .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container:hover {
+            background: #fafdfe;
+            border-left: 2px solid #6ec0e6;
+            border-right: 2px solid #6ec0e6;
+            border-bottom: 2px solid #6ec0e6;
+            transition: 0.5s ease; }
+        .main-container .main-content-holder .main-left-container .trans-submit {
+          margin-top: 40px; }
+          .main-container .main-content-holder .main-left-container .trans-submit button {
+            background: #6ec0e6;
+            border: 1px solid #6fa0b7;
+            border-radius: 4px;
+            padding: 15px 20px;
+            color: #ffffff;
+            font-family: 'PostGrotesk-Medium';
+            font-size: 16px;
+            cursor: pointer;
+            -moz-box-shadow: inset 0 0 5px #5cb4dd;
+            -webkit-box-shadow: inset 0 0 5px #5cb4dd;
+            box-shadow: inset 0 0 5px #5cb4dd;
+            transition: 0.3s ease; }
+          .main-container .main-content-holder .main-left-container .trans-submit button:hover {
+            background: #399cca; }
+        .main-container .main-content-holder .main-left-container .cf-footer {
+          margin-top: 50px;
+          border-top: 2px solid #eeeeee;
+          padding-top: 10px; }
+          .main-container .main-content-holder .main-left-container .cf-footer span {
+            color: #cacaca;
+            font-family: 'PostGrotesk-Medium';
+            font-size: 12px; }
+          .main-container .main-content-holder .main-left-container .cf-footer .cf-footer-links {
+            float: right; }
+            .main-container .main-content-holder .main-left-container .cf-footer .cf-footer-links a {
+              text-decoration: none;
+              color: #6ec0e6;
+              font-family: 'PostGrotesk-Medium';
+              font-size: 12px;
+              margin-left: 15px;
+              transition: 0.3s ease; }
+            .main-container .main-content-holder .main-left-container .cf-footer .cf-footer-links a:hover {
+              color: #399cca; }
+      .main-container .main-content-holder .main-right-container {
+        display: table-cell;
+        width: 40%;
+        background: url("../img/rightColBg.png") repeat-y #fbfbfb;
+        float: right;
+        margin: 0;
+        padding: 0;
+        height: 100%; }
+        .main-container .main-content-holder .main-right-container .confirmation-panel {
+          padding: 40px; }
+          .main-container .main-content-holder .main-right-container .confirmation-panel .sending-details {
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            font-family: 'PostGrotesk-Bold';
+            color: #616161;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px; }
+          .main-container .main-content-holder .main-right-container .confirmation-panel .sending-amount {
+            background: #ffffff;
+            padding: 15px;
+            border-left: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            height: 20px; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .sending-amount .sending-amount-label {
+              float: left; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .sending-amount .sending-amount-number {
+              float: right;
+              text-align: right; }
+          .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-details {
+            padding: 15px;
+            border-left: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            font-family: 'PostGrotesk-Bold';
+            color: #616161; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-details .rec-det-right {
+              float: right;
+              color: #64b5f6;
+              font-family: 'PostGrotesk-Medium';
+              font-size: 11px; }
+              .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-details .rec-det-right a {
+                color: #64b5f6;
+                font-family: 'PostGrotesk-Medium';
+                font-size: 11px;
+                text-decoration: none; }
+          .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations {
+            background: #ffffff;
+            padding: 15px;
+            border-left: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            line-height: 2; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations .receiving-rate .receiving-rate-right {
+              float: right; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations .sending-fee .sending-fee-right {
+              float: right; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations .sending-fee .sidebar-output-sign-fee {
+              float: right; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations .delivery-date .delivery-date-right {
+              float: right; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations .recipient-gets .recipient-gets-right {
+              float: right; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations .recipient-gets .sidebar-output-sign {
+              float: right; }
+          .main-container .main-content-holder .main-right-container .confirmation-panel .savings {
+            background: #ffffff;
+            padding: 15px;
+            border-left: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            height: 20px;
+            text-align: center; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .savings .savings-text {
+              color: #ffc766;
+              font-family: 'PostGrotesk-Bold'; }
+      .main-container .main-content-holder .main-right-container-mobile {
+        width: 100%;
+        background: #fbfbfb;
+        border-top: 2px solid #e6e6e6;
+        margin: 0;
+        padding: 0;
+        display: none; } }
+/* TABLET VERSION */
+@media (min-width: 767px) and (max-width: 1200px) {
+  .main-container {
+    font-size: 14px;
+    /* HEADER */
+    /* MAIN CONTENT */ }
+    .main-container .header-container {
+      position: fixed;
+      top: 0;
+      z-index: 99;
+      width: 100%;
+      background-color: #32323c;
+      height: 75px; }
+      .main-container .header-container .header {
+        width: 100%;
+        height: inherit;
+        margin-left: auto;
+        margin-right: auto; }
+        .main-container .header-container .header .logo {
+          background: url("../img/logo.png");
+          width: 173px;
+          height: 75px;
+          float: left; }
+          .main-container .header-container .header .logo a {
+            width: 100%;
+            height: 100%;
+            display: block; }
+    .main-container .main-content-holder {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: table;
+      height: 100%;
+      padding-top: 75px;
+      /* RECEIVING DETAILS VISIBLE ONLY ON MOBILE */ }
+      .main-container .main-content-holder .main-left-container {
+        display: table-cell;
+        width: 60%;
+        background: #ffffff;
+        margin: 0;
+        padding: 0;
+        float: left;
+        height: 100%; }
+        .main-container .main-content-holder .main-left-container .transaction-panel {
+          padding: 40px; }
+          .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav {
+            height: 60px; }
+            .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul {
+              padding-left: 0; }
+              .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li {
+                float: left;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 14px;
+                font: inherit;
+                vertical-align: baseline;
+                list-style: none;
+                font-weight: bold;
+                color: #b0bec5;
+                width: 33%;
+                border-bottom: 4px solid #e2f2fa; }
+                .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li .step-no {
+                  margin: 10px 10px 0 30px;
+                  font-size: 11px; }
+                .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li .step-desc {
+                  margin: 5px 10px 10px 30px;
+                  font-size: 12px; }
+              .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:first-child {
+                float: left;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 16px;
+                font: inherit;
+                vertical-align: baseline;
+                list-style: none;
+                font-weight: bold;
+                color: #6ec0e6;
+                width: 33%;
+                border-bottom: 4px solid #6ec0e6;
+                cursor: pointer; }
+                .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:first-child .step-no {
+                  margin: 10px 10px 0 30px;
+                  font-size: 11px; }
+                .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:first-child .step-desc {
+                  margin: 5px 10px 10px 30px;
+                  font-size: 12px; }
+              .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:hover {
+                float: left;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 16px;
+                font: inherit;
+                vertical-align: baseline;
+                list-style: none;
+                font-weight: bold;
+                color: #6ec0e6;
+                width: 33%;
+                border-bottom: 4px solid #6ec0e6;
+                cursor: pointer;
+                transition: 0.3s ease; }
+                .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:hover .step-no {
+                  margin: 10px 10px 0 30px;
+                  font-size: 11px; }
+                .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:hover .step-desc {
+                  margin: 5px 10px 10px 30px;
+                  font-size: 12px; }
+        .main-container .main-content-holder .main-left-container .trans-title {
+          padding: 30px 30px 20px 0;
+          font-family: 'PostGrotesk-Book';
+          font-size: 15px;
+          color: #797979;
+          margin-bottom: 0; }
+          .main-container .main-content-holder .main-left-container .trans-title p:first-child {
+            font-family: 'PostGrotesk-Bold';
+            font-size: 18px;
+            color: #212121;
+            margin-bottom: 0; }
+        .main-container .main-content-holder .main-left-container .trans-form {
+          /*DROPDOWN COUNTRIES INPUT*/ }
+          .main-container .main-content-holder .main-left-container .trans-form .trans-send-container {
+            padding: 25px;
+            border: 2px solid #6ec0e6;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            box-shadow: none;
+            height: 60px; }
+            .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left {
+              width: 65%;
+              float: left; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left .send-left-label {
+                color: #6ec0e6;
+                font-family: 'PostGrotesk-Medium';
+                font-size: 16px;
+                margin-bottom: 10px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left .send-left-input {
+                height: 40px; }
+                .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left .send-left-input .input-currency-sign {
+                  font-size: 25px; }
+                .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left .send-left-input .input-amount {
+                  width: 90%;
+                  height: 100%;
+                  font-size: 25px;
+                  border: 0;
+                  background: transparent;
+                  outline: none; }
+            .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right {
+              width: 30%;
+              float: right;
+              padding-top: 5px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right select {
+                width: 90px;
+                height: 50px;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                font-family: 'PostGrotesk-Bold';
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-align: right;
+                padding-left: 45px;
+                cursor: pointer;
+                background: url("../img/eur-flag.png") top 14px left 14px no-repeat; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right select:hover {
+                outline: 0; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right select:focus {
+                outline: 0; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right select::-ms-expand {
+                display: none; }
+          .main-container .main-content-holder .main-left-container .trans-form .trans-send-container:hover {
+            background: #fafdfe;
+            border: 2px solid #6ec0e6; }
+          .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container {
+            padding: 25px;
+            border-left: 2px solid #e6e6e6;
+            border-right: 2px solid #e6e6e6;
+            border-bottom: 2px solid #e6e6e6;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            box-shadow: none;
+            height: 60px; }
+            .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left {
+              width: 65%;
+              float: left; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left .send-left-label {
+                color: #6ec0e6;
+                font-family: 'PostGrotesk-Medium';
+                font-size: 16px;
+                margin-bottom: 10px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left .send-left-input {
+                height: 40px; }
+                .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left .send-left-input .output-currency-sign {
+                  font-size: 25px; }
+                .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left .send-left-input .input-amount {
+                  width: 90%;
+                  height: 100%;
+                  font-size: 25px;
+                  border: 0;
+                  background: transparent;
+                  outline: none; }
+            .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right {
+              width: 30%;
+              float: right;
+              padding-top: 5px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right select {
+                width: 90px;
+                height: 50px;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                font-family: 'PostGrotesk-Bold';
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-align: right;
+                padding-left: 45px;
+                cursor: pointer;
+                background: url("../img/eur-flag.png") top 14px left 14px no-repeat; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right select:hover {
+                outline: 0; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right select:focus {
+                outline: 0; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right select::-ms-expand {
+                display: none; }
+          .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container:hover {
+            background: #fafdfe;
+            border-left: 2px solid #6ec0e6;
+            border-right: 2px solid #6ec0e6;
+            border-bottom: 2px solid #6ec0e6;
+            transition: 0.5s ease; }
+        .main-container .main-content-holder .main-left-container .trans-submit {
+          margin-top: 40px; }
+          .main-container .main-content-holder .main-left-container .trans-submit button {
+            background: #6ec0e6;
+            border: 1px solid #6fa0b7;
+            border-radius: 4px;
+            padding: 15px 20px;
+            color: #ffffff;
+            font-family: 'PostGrotesk-Medium';
+            font-size: 16px;
+            cursor: pointer;
+            -moz-box-shadow: inset 0 0 5px #5cb4dd;
+            -webkit-box-shadow: inset 0 0 5px #5cb4dd;
+            box-shadow: inset 0 0 5px #5cb4dd;
+            transition: 0.3s ease; }
+          .main-container .main-content-holder .main-left-container .trans-submit button:hover {
+            background: #399cca; }
+        .main-container .main-content-holder .main-left-container .cf-footer {
+          margin-top: 50px;
+          border-top: 2px solid #eeeeee;
+          padding-top: 10px; }
+          .main-container .main-content-holder .main-left-container .cf-footer span {
+            color: #cacaca;
+            font-family: 'PostGrotesk-Medium';
+            font-size: 12px; }
+          .main-container .main-content-holder .main-left-container .cf-footer .cf-footer-links {
+            float: right; }
+            .main-container .main-content-holder .main-left-container .cf-footer .cf-footer-links a {
+              text-decoration: none;
+              color: #6ec0e6;
+              font-family: 'PostGrotesk-Medium';
+              font-size: 12px;
+              margin-left: 15px;
+              transition: 0.3s ease; }
+            .main-container .main-content-holder .main-left-container .cf-footer .cf-footer-links a:hover {
+              color: #399cca; }
+      .main-container .main-content-holder .main-right-container {
+        display: table-cell;
+        width: 40%;
+        background: url("../img/rightColBg.png") repeat-y #fbfbfb;
+        float: right;
+        margin: 0;
+        padding: 0;
+        height: 100%; }
+        .main-container .main-content-holder .main-right-container .confirmation-panel {
+          padding: 40px; }
+          .main-container .main-content-holder .main-right-container .confirmation-panel .sending-details {
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            font-family: 'PostGrotesk-Bold';
+            color: #616161;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px; }
+          .main-container .main-content-holder .main-right-container .confirmation-panel .sending-amount {
+            background: #ffffff;
+            padding: 15px;
+            border-left: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            height: 20px; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .sending-amount .sending-amount-label {
+              float: left; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .sending-amount .sending-amount-number {
+              float: right;
+              text-align: right; }
+          .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-details {
+            padding: 15px;
+            border-left: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            font-family: 'PostGrotesk-Bold';
+            color: #616161; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-details .rec-det-right {
+              float: right;
+              color: #64b5f6;
+              font-family: 'PostGrotesk-Medium';
+              font-size: 11px; }
+              .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-details .rec-det-right a {
+                color: #64b5f6;
+                font-family: 'PostGrotesk-Medium';
+                font-size: 11px;
+                text-decoration: none; }
+          .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations {
+            background: #ffffff;
+            padding: 15px;
+            border-left: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            line-height: 2; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations .receiving-rate .receiving-rate-right {
+              float: right; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations .sending-fee .sending-fee-right {
+              float: right; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations .sending-fee .sidebar-output-sign-fee {
+              float: right; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations .delivery-date .delivery-date-right {
+              float: right; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations .recipient-gets .recipient-gets-right {
+              float: right; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .receiving-informations .recipient-gets .sidebar-output-sign {
+              float: right; }
+          .main-container .main-content-holder .main-right-container .confirmation-panel .savings {
+            background: #ffffff;
+            padding: 15px;
+            border-left: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            height: 20px;
+            text-align: center; }
+            .main-container .main-content-holder .main-right-container .confirmation-panel .savings .savings-text {
+              color: #ffc766;
+              font-family: 'PostGrotesk-Bold'; }
+      .main-container .main-content-holder .main-right-container-mobile {
+        width: 100%;
+        background: #fbfbfb;
+        border-top: 2px solid #e6e6e6;
+        margin: 0;
+        padding: 0;
+        display: none; } }
+/* MOBILE VERSION */
+@media screen and (max-width: 767px) {
+  .main-container {
+    font-size: 14px;
+    /* HEADER */
+    /* MAIN CONTENT */ }
+    .main-container .header-container {
+      position: fixed;
+      top: 0;
+      z-index: 99;
+      width: 100%;
+      background-color: #32323c;
+      height: 75px; }
+      .main-container .header-container .header {
+        height: inherit;
+        margin-left: auto;
+        margin-right: auto; }
+        .main-container .header-container .header .logo {
+          background: url("../img/logo.png");
+          width: 173px;
+          height: 75px;
+          float: left; }
+          .main-container .header-container .header .logo a {
+            width: 100%;
+            height: 100%;
+            display: block; }
+    .main-container .main-content-holder {
+      margin-left: auto;
+      margin-right: auto;
+      height: 100%;
+      padding-top: 75px;
+      /* DESKTOP RECEIVING PANEL HIDDEN */
+      /* RECEIVING DETAILS VISIBLE ONLY ON MOBILE */ }
+      .main-container .main-content-holder .main-left-container {
+        width: 100%;
+        background: #ffffff;
+        margin: 0;
+        padding: 0; }
+        .main-container .main-content-holder .main-left-container .transaction-panel {
+          padding: 20px; }
+          .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul {
+            padding-left: 0; }
+            .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li {
+              margin: 0;
+              padding: 0;
+              border: 0;
+              font-size: 14px;
+              font: inherit;
+              vertical-align: baseline;
+              list-style: none;
+              font-weight: bold;
+              color: #b0bec5;
+              border-bottom: 4px solid #e2f2fa; }
+              .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li .step-no {
+                margin: 10px 10px 0 30px;
+                font-size: 11px; }
+              .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li .step-desc {
+                margin: 5px 10px 10px 30px;
+                font-size: 13px; }
+            .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:first-child {
+              margin: 0;
+              padding: 0;
+              border: 0;
+              font-size: 16px;
+              font: inherit;
+              vertical-align: baseline;
+              list-style: none;
+              font-weight: bold;
+              color: #6ec0e6;
+              border-bottom: 4px solid #6ec0e6;
+              cursor: pointer; }
+              .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:first-child .step-no {
+                margin: 10px 10px 0 30px;
+                font-size: 11px; }
+              .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:first-child .step-desc {
+                margin: 5px 10px 10px 30px;
+                font-size: 13px; }
+            .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:hover {
+              margin: 0;
+              padding: 0;
+              border: 0;
+              font-size: 16px;
+              font: inherit;
+              vertical-align: baseline;
+              list-style: none;
+              font-weight: bold;
+              color: #6ec0e6;
+              border-bottom: 4px solid #6ec0e6;
+              cursor: pointer; }
+              .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:hover .step-no {
+                margin: 10px 10px 0 30px;
+                font-size: 11px; }
+              .main-container .main-content-holder .main-left-container .transaction-panel .trans-nav ul li:hover .step-desc {
+                margin: 5px 10px 10px 30px;
+                font-size: 13px; }
+        .main-container .main-content-holder .main-left-container .trans-title {
+          padding: 10px 30px 10px 0;
+          font-family: 'PostGrotesk-Book';
+          font-size: 15px;
+          color: #797979;
+          margin-bottom: 0; }
+          .main-container .main-content-holder .main-left-container .trans-title p:first-child {
+            font-family: 'PostGrotesk-Bold';
+            font-size: 18px;
+            color: #212121;
+            margin-bottom: 0; }
+        .main-container .main-content-holder .main-left-container .trans-form {
+          padding-bottom: 10px; }
+          .main-container .main-content-holder .main-left-container .trans-form .trans-send-container {
+            padding: 25px;
+            border: 2px solid #6ec0e6;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            box-shadow: none;
+            height: 60px; }
+            .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left {
+              width: 65%;
+              float: left; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left .send-left-label {
+                color: #6ec0e6;
+                font-family: 'PostGrotesk-Medium';
+                font-size: 16px;
+                margin-bottom: 10px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left .send-left-input {
+                height: 40px; }
+                .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left .send-left-input .input-currency-sign {
+                  font-size: 25px; }
+                .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left .send-left-input .input-amount {
+                  width: 75%;
+                  height: 100%;
+                  font-size: 25px;
+                  border: 0;
+                  background: transparent;
+                  outline: none; }
+            .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right {
+              width: 35%;
+              float: right;
+              padding-top: 5px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right select {
+                width: 90px;
+                height: 50px;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                font-family: 'PostGrotesk-Bold';
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-align: right;
+                padding-left: 45px;
+                cursor: pointer;
+                background: url("../img/eur-flag.png") top 14px left 14px no-repeat; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right select:hover {
+                outline: 0; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right select:focus {
+                outline: 0; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-right select::-ms-expand {
+                display: none; }
+          .main-container .main-content-holder .main-left-container .trans-form .trans-send-container:hover {
+            background: #fafdfe;
+            border: 2px solid #6ec0e6; }
+          .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container {
+            padding: 25px;
+            border-left: 2px solid #e6e6e6;
+            border-right: 2px solid #e6e6e6;
+            border-bottom: 2px solid #e6e6e6;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            box-shadow: none;
+            height: 60px; }
+            .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left {
+              width: 65%;
+              float: left; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left .send-left-label {
+                color: #6ec0e6;
+                font-family: 'PostGrotesk-Medium';
+                font-size: 16px;
+                margin-bottom: 10px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left .send-left-input {
+                height: 40px; }
+                .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left .send-left-input .output-currency-sign {
+                  font-size: 25px; }
+                .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-left .send-left-input .input-amount {
+                  width: 75%;
+                  height: 100%;
+                  font-size: 25px;
+                  border: 0;
+                  background: transparent;
+                  outline: none; }
+            .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right {
+              width: 35%;
+              float: right;
+              padding-top: 5px; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right select {
+                width: 90px;
+                height: 50px;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                font-family: 'PostGrotesk-Bold';
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-align: right;
+                padding-left: 45px;
+                cursor: pointer;
+                background: url("../img/eur-flag.png") top 14px left 14px no-repeat; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right select:hover {
+                outline: 0; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right select:focus {
+                outline: 0; }
+              .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container .send-right select::-ms-expand {
+                display: none; }
+          .main-container .main-content-holder .main-left-container .trans-form .trans-gets-container:hover {
+            background: #fafdfe;
+            border-left: 2px solid #6ec0e6;
+            border-right: 2px solid #6ec0e6;
+            border-bottom: 2px solid #6ec0e6;
+            transition: 0.5s ease; }
+        .main-container .main-content-holder .main-left-container .trans-submit {
+          margin-top: 40px; }
+          .main-container .main-content-holder .main-left-container .trans-submit button {
+            background: #6ec0e6;
+            border: 1px solid #6fa0b7;
+            border-radius: 4px;
+            padding: 15px 20px;
+            color: #ffffff;
+            font-family: 'PostGrotesk-Medium';
+            font-size: 16px;
+            cursor: pointer;
+            -moz-box-shadow: inset 0 0 5px #5cb4dd;
+            -webkit-box-shadow: inset 0 0 5px #5cb4dd;
+            box-shadow: inset 0 0 5px #5cb4dd;
+            transition: 0.3s ease; }
+          .main-container .main-content-holder .main-left-container .trans-submit button:hover {
+            background: #399cca; }
+        .main-container .main-content-holder .main-left-container .cf-footer {
+          margin-top: 50px;
+          border-top: 2px solid #eeeeee;
+          padding-top: 10px; }
+          .main-container .main-content-holder .main-left-container .cf-footer span {
+            color: #cacaca;
+            font-family: 'PostGrotesk-Medium';
+            font-size: 12px; }
+          .main-container .main-content-holder .main-left-container .cf-footer .cf-footer-links {
+            float: right; }
+            .main-container .main-content-holder .main-left-container .cf-footer .cf-footer-links a {
+              text-decoration: none;
+              color: #6ec0e6;
+              font-family: 'PostGrotesk-Medium';
+              font-size: 12px;
+              margin-left: 15px;
+              transition: 0.3s ease; }
+            .main-container .main-content-holder .main-left-container .cf-footer .cf-footer-links a:hover {
+              color: #399cca; }
+      .main-container .main-content-holder .main-right-container {
+        width: 100%;
+        background: #fbfbfb;
+        border-top: 2px solid #e6e6e6;
+        margin: 0;
+        padding: 0;
+        display: none; }
+      .main-container .main-content-holder .main-right-container-mobile {
+        width: 100%;
+        background: #fbfbfb;
+        border-top: 2px solid #e6e6e6;
+        margin: 0;
+        padding: 0; }
+        .main-container .main-content-holder .main-right-container-mobile .confirmation-panel {
+          padding: 10px 0 0 0; }
+          .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .sending-details {
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            font-family: 'PostGrotesk-Bold';
+            color: #616161;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px; }
+          .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .sending-amount {
+            background: #ffffff;
+            padding: 15px;
+            border-left: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            height: 20px; }
+            .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .sending-amount .sending-amount-label {
+              float: left; }
+            .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .sending-amount .sending-amount-number {
+              float: right;
+              text-align: right; }
+          .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .receiving-details {
+            padding: 15px;
+            border-left: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            font-family: 'PostGrotesk-Bold';
+            color: #616161; }
+            .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .receiving-details .rec-det-right {
+              float: right;
+              color: #64b5f6;
+              font-family: 'PostGrotesk-Medium';
+              font-size: 11px; }
+              .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .receiving-details .rec-det-right a {
+                color: #64b5f6;
+                font-family: 'PostGrotesk-Medium';
+                font-size: 11px;
+                text-decoration: none; }
+          .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .receiving-informations {
+            background: #ffffff;
+            padding: 15px;
+            border-left: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            line-height: 2; }
+            .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .receiving-informations .receiving-rate .receiving-rate-right {
+              float: right; }
+            .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .receiving-informations .sending-fee .sending-fee-right {
+              float: right; }
+            .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .receiving-informations .sending-fee .sidebar-output-sign-fee {
+              float: right; }
+            .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .receiving-informations .delivery-date .delivery-date-right {
+              float: right; }
+            .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .receiving-informations .recipient-gets .recipient-gets-right {
+              float: right; }
+            .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .receiving-informations .recipient-gets .sidebar-output-sign {
+              float: right; }
+          .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .savings {
+            background: #ffffff;
+            padding: 15px;
+            border-left: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            height: 20px;
+            text-align: center; }
+            .main-container .main-content-holder .main-right-container-mobile .confirmation-panel .savings .savings-text {
+              color: #ffc766;
+              font-family: 'PostGrotesk-Bold'; } }
+/* MODAL */
+/* Outer */
+.popup {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.75);
+  /* Inner */ }
+  .popup .popup-inner {
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 6px black;
+    border-radius: 3px;
+    background: #fff; }
+    .popup .popup-inner .popup-header {
+      padding: 10px 30px;
+      color: #94a2ac;
+      border-bottom: 2px solid #e0e0e0;
+      font-family: 'PostGrotesk-Medium'; }
+      @media screen and (max-width: 767px) {
+        .popup .popup-inner .popup-header {
+          padding: 0 20px; } }
+      .popup .popup-inner .popup-header .popup-desc {
+        font-size: 12px; }
+    .popup .popup-inner .popup-content {
+      padding: 40px 20px 20px 20px;
+      background: #fbfcfc;
+      border-bottom: 2px solid #e0e0e0;
+      font-family: 'PostGrotesk-Book'; }
+      @media screen and (max-width: 767px) {
+        .popup .popup-inner .popup-content {
+          padding: 0 20px; } }
+      .popup .popup-inner .popup-content .content-center {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px; }
+        .popup .popup-inner .popup-content .content-center .tel-sending {
+          line-height: 2.5;
+          height: 60px; }
+          @media screen and (max-width: 767px) {
+            .popup .popup-inner .popup-content .content-center .tel-sending {
+              height: 100px; } }
+          .popup .popup-inner .popup-content .content-center .tel-sending .tel-label {
+            float: left;
+            font-family: 'PostGrotesk-Bold';
+            color: #3c454b; }
+            @media screen and (max-width: 767px) {
+              .popup .popup-inner .popup-content .content-center .tel-sending .tel-label {
+                float: none; } }
+          .popup .popup-inner .popup-content .content-center .tel-sending .tel-light {
+            background: #f7f7f7;
+            float: left;
+            color: #999999;
+            border-top: 1px solid #e3e2e2;
+            border-right: 1px solid #e3e2e2;
+            border-bottom: 1px solid #e3e2e2;
+            border-left: 1px solid #e3e2e2;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px; }
+          .popup .popup-inner .popup-content .content-center .tel-sending .tel-dark {
+            background: #f2f1f1;
+            float: left;
+            color: #999999;
+            border-top: 1px solid #e3e2e2;
+            border-left: 1px solid #e3e2e2;
+            border-bottom: 1px solid #e3e2e2;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px; }
+        .popup .popup-inner .popup-content .content-center .input-validation-code {
+          text-align: center;
+          box-shadow: none; }
+          .popup .popup-inner .popup-content .content-center .input-validation-code input {
+            width: 45px;
+            height: 45px;
+            font-size: 25px;
+            text-align: center;
+            outline: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 8px 2px;
+            border: 1px solid #ccc;
+            border-radius: 5px; }
+          .popup .popup-inner .popup-content .content-center .input-validation-code input:focus {
+            border: 1px solid #6ec0e6; }
+        .popup .popup-inner .popup-content .content-center .receive-new-code {
+          font-size: 12px;
+          font-family: 'PostGrotesk-Medium';
+          color: #81909b;
+          margin-top: 5px; }
+          .popup .popup-inner .popup-content .content-center .receive-new-code a {
+            font-size: 12px;
+            font-family: 'PostGrotesk-Medium';
+            color: #81909b;
+            text-decoration: none; }
+          .popup .popup-inner .popup-content .content-center .receive-new-code .sms-code i {
+            margin-right: 5px;
+            color: #6ec0e6; }
+          .popup .popup-inner .popup-content .content-center .receive-new-code .call-code {
+            float: right; }
+            .popup .popup-inner .popup-content .content-center .receive-new-code .call-code i {
+              margin-right: 5px;
+              color: #6ec0e6; }
+    .popup .popup-inner .popup-footer {
+      padding: 20px; }
+      .popup .popup-inner .popup-footer button {
+        background: #6ec0e6;
+        border: 1px solid #6fa0b7;
+        border-radius: 4px;
+        padding: 5px 15px;
+        color: #ffffff;
+        font-family: 'PostGrotesk-Medium';
+        font-size: 12px;
+        cursor: pointer;
+        -moz-box-shadow: inset 0 0 5px #5cb4dd;
+        -webkit-box-shadow: inset 0 0 5px #5cb4dd;
+        box-shadow: inset 0 0 5px #5cb4dd;
+        transition: 0.3s ease; }
+      .popup .popup-inner .popup-footer button:hover {
+        background: #399cca; }
+      .popup .popup-inner .popup-footer .back-button {
+        background: #ecf6f6;
+        border: 1px solid #cee3eb;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: #768895;
+        outline: none; }
+      .popup .popup-inner .popup-footer .back-button:hover {
+        background: #e0f0f0;
+        border: 1px solid #cbcbcb; }
+      .popup .popup-inner .popup-footer .verify-button {
+        background: #ddf0f9;
+        border: 1px solid #cee3eb;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: #ffffff;
+        outline: none;
+        margin-right: 10px; }
+      .popup .popup-inner .popup-footer .verify-button:hover {
+        background: #6ec0e6;
+        border: 1px solid #cee3eb; }
+      .popup .popup-inner .popup-footer .verify-if-entered {
+        background: #6ec0e6;
+        border: 1px solid #cee3eb; }
+      .popup .popup-inner .popup-footer a {
+        float: right;
+        color: #6ec0e6;
+        text-decoration: none;
+        font-family: 'PostGrotesk-Bold';
+        line-height: 2;
+        font-size: 12; }

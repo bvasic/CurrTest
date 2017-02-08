@@ -1,8 +1,233 @@
 <html>
-<head>
-<script type="text/javascript" src="main.js"></script>
-</head>
-<body>
-Technical test
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+		<meta name="author" content="Bojan Vasic">
+		<meta name="description" content="CurrencyFair">
+		<meta name="keywords" content="CurrencyFair">
+		<title>CurrencyFair</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+		<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+		<script type='text/javascript' src='js/jquery-3.1.1.min.js'></script>
+		<script type='text/javascript' src='js/global.js'></script>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="header-container">
+				<div class="header">
+					<div class="logo"><a href="index.html"></a></div>
+				</div>
+			</div>
+			<div class="main-content-holder">
+				<div class="main-left-container">
+					<div class="transaction-panel">
+						<!--TRANSACTION NAVIGATION MENU -->
+						<div class="trans-nav">
+							<ul>
+								<li>
+									<p class="step-no">Step 1</p>
+									<p class="step-desc">Transaction info</p>
+								</li>
+								<li>
+									<p class="step-no">Step 2</p>
+									<p class="step-desc">Recipient info</p>
+								</li>
+								<li>
+									<p class="step-no">Step 3</p>
+									<p class="step-desc">Make payment</p>
+								</li>
+							</ul>
+						</div>
+						<!--TRANSACTION NAVIGATION MENU END-->
+						<div class="trans-title">
+							<p>Let's setup your transaction!</p>
+							<p>Specify the amount to be sent or received.</p>
+						</div>
+						<!--TRANSACTION CONVERSION FORM-->
+						<div class="trans-form">
+							
+							<div class="trans-send-container">
+								<div id="sendFocus" class="send-left">
+									<div class="send-left-label">
+										YOU SEND
+									</div>
+									<div class="send-left-input">
+										<span class="input-currency-sign" id="#inputSign">
+											€
+										</span>
+										<input id="setAmount" type="text" class="input-amount" maxlength="10"/>
+									</div>
+								</div>
+								<div class="send-right" id="inputCurrencySelect">
+									<select name="currenciesIn" class="inputCurrencySelect">
+										<option value="eur" class="eur-input" data-countryid="eur">EUR</option>
+										<option value="gbp" class="gbp-input" data-countryid="gbp">GBP</option>
+										<option value="usd" class="usd-input" data-countryid="usd">USD</option>
+										<option value="cad" class="cad-input" data-countryid="cad">CAD</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="trans-gets-container">
+								<div id="getFocus" class="send-left">
+									<div class="send-left-label">
+										RECEIVER GETS
+									</div>
+									<div class="send-left-input">
+										<span class="output-currency-sign" id="#outputSign">
+										€
+										</span>
+										<input id="getAmount" type="text" class="input-amount"/>
+									</div>
+								</div>
+								<div class="send-right" id="outputCurrencySelect">
+									<select name="currenciesIn" class="outputCurrencySelect">
+										<option value="eur" class="eur-input" data-countryid="eur">EUR</option>
+										<option value="gbp" class="gbp-input" data-countryid="gbp">GBP</option>
+										<option value="usd" class="usd-input" data-countryid="usd">USD</option>
+										<option value="cad" class="cad-input" data-countryid="cad">CAD</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<!--TRANSACTION CONVERSION FORM END-->
+						<!-- RECEIVING DETAILS VISIBLE ONLY ON MOBILE -->
+						<div class="main-right-container-mobile">
+							<div class="confirmation-panel">
+								<div class="sending-details">
+									Sending Details
+								</div>
+								<div class="sending-amount">
+									<div class="sending-amount-label">
+										You send
+									</div>
+									<div class="sending-amount-number">
+										<span class="sidebar-input-sign">€</span><span id="rightSendingAmount">0</span>
+									</div>
+								</div>
+								<div class="receiving-details">
+									<span class="rec-det-left">Receiving Details</span><span class="rec-det-right"><a href="#">As of right now</a> <i class="fa fa-question-circle" aria-hidden="true"></i></span>
+								</div>
+								<div class="receiving-informations">
+									<div class="receiving-rate">
+										<span class="receiving-rate-left">Rate</span><span class="receiving-rate-right" id="rate">21</span>
+									</div>
+									<div class="sending-fee">
+										<span class="sending-fee-left">Fee</span><span class="sending-fee-right">2.5</span><span class="sidebar-output-sign-fee" id="sidebar-output-sign-fee">€</span>
+									</div>
+									<div class="delivery-date">
+										<span class="delivery-date-left">Delivery date</span><span class="delivery-date-right" id="delivery-date-right">12 12 2017</span>
+									</div>
+									<div class="recipient-gets">
+										<span class="recipient-gets-left">Recipient gets</span>
+										<span class="recipient-gets-right" id="rightReceivingAmount">0</span>
+										<span class="sidebar-output-sign" id="sidebar-output-sign">€</span>
+									</div>
+								</div>
+								<div class="savings">
+									<div class="savings-text">
+										You save <span class="sidebar-output-sign-last" id="sidebar-output-sign-last">€</span>
+										<span class="saved-amount" id="saved-amount">0</span>
+										 compared your bank!
+									</div>
+								</div>
+							</div>
+						</div>
+				<!-- END RECEIVING DETAILS FOR MOBILE -->
+						<div class="trans-submit">
+							<button data-popup-open="popup-confirmation">Next</button>
+						</div>
+						<div class="cf-footer">
+							<span>© 2016 CurrencyFair</span>
+							<div class="cf-footer-links">
+								<a href="#">Help & Support</a>
+								<a href="#">Legal Stuff</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- RIGHT SIDEBAR PANEL-->
+				<div class="main-right-container">
+					<div class="confirmation-panel">
+						<div class="sending-details">
+							Sending Details
+						</div>
+						<div class="sending-amount">
+							<div class="sending-amount-label">
+								You send
+							</div>
+							<div class="sending-amount-number">
+								<span class="sidebar-input-sign">€</span><span id="rightSendingAmount">0</span>
+							</div>
+						</div>
+						<div class="receiving-details">
+							<span class="rec-det-left">Receiving Details</span><span class="rec-det-right"><a href="#">As of right now</a> <i class="fa fa-question-circle" aria-hidden="true"></i></span>
+						</div>
+						<div class="receiving-informations">
+							<div class="receiving-rate">
+								<span class="receiving-rate-left">Rate</span><span class="receiving-rate-right" id="rate">21</span>
+							</div>
+							<div class="sending-fee">
+								<span class="sending-fee-left">Fee</span><span class="sending-fee-right">2.5</span><span class="sidebar-output-sign-fee" id="sidebar-output-sign-fee">€</span>
+							</div>
+							<div class="delivery-date">
+								<span class="delivery-date-left">Delivery date</span><span class="delivery-date-right" id="delivery-date-right">12 12 2017</span>
+							</div>
+							<div class="recipient-gets">
+								<span class="recipient-gets-left">Recipient gets</span>
+								<span class="recipient-gets-right" id="rightReceivingAmount">0</span>
+								<span class="sidebar-output-sign" id="sidebar-output-sign">€</span>
+							</div>
+						</div>
+						<div class="savings">
+							<div class="savings-text">
+								You save <span class="sidebar-output-sign-last" id="sidebar-output-sign-last">€</span>
+								<span class="saved-amount" id="saved-amount">0</span>
+								 compared your bank!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal confirmation -->
+			<div class="popup" data-popup="popup-confirmation">
+			    <div class="popup-inner">
+			    	<div class="popup-header">
+				        <p class="popup-title"><i class="fa fa-lock" aria-hidden="true"></i> Identity verification required</p>
+				        <p class="popup-desc">For your security, we ocassionally require you to verify your identity by entering a code sent to your mobile device.</p>
+			        </div>
+			        <div class="popup-content">
+				        <div class="content-center">
+				        	<div class="tel-sending">
+					        	<div class="tel-label">Enter the code sent via SMS to &nbsp;</div>
+					        	<div class="tel-dark">&nbsp;&nbsp;+353&nbsp;&nbsp;</div>
+					        	<div class="tel-light">&nbsp;&nbsp;872251177&nbsp;&nbsp;</div>
+				        	</div>
+				        	<div class="input-validation-code">
+				        		<input type="text" id="number1" maxlength="1"/>
+				        		<input type="text" id="number2" maxlength="1"/>
+				        		<input type="text" id="number3" maxlength="1"/>
+				        		<input type="text" id="number4" maxlength="1"/>
+				        		<input type="text" id="number5" maxlength="1"/>
+				        		<input type="text" id="number6" maxlength="1"/>
+				        	</div>
+				        	<div class="receive-new-code">
+				        		<span class="sms-code"><i class="fa fa-repeat" aria-hidden="true"></i><a href="#">Receive a new code</a></span>
+				        		<span class="call-code"><i class="fa fa-phone" aria-hidden="true"></i><a href="#">Receive code via call instead</a></span>
+				        	</div>
+				        </div>
+			        </div>
+			        <div class="popup-footer">
+			        	<button class="verify-button">Verify Identity</button>
+			        	<button data-popup-close="popup-confirmation" class="back-button">Back</button>
+			        	<a href="#">I can't access this mobile device</a>
+			        </div>
+			    </div>
+			</div>
+			<!-- Modal confirmation -->
+		</div>
+	</body>
 </html>
