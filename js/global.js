@@ -149,6 +149,5 @@ $( document ).ready(function() {
 	//Possibility to hide details window on mobile view and rather to put it after clicking next button after validation
 	/*if ($(window).width() < 767) {
 		$('.main-right-container').hide();
-	   $('.main-right-container').prependTo(".trans-submit");
 	}*/
 });
