@@ -1212,6 +1212,9 @@ body {
           font-family: 'PostGrotesk-Medium';
           color: #81909b;
           margin-top: 5px; }
+          @media screen and (max-width: 767px) {
+            .popup .popup-inner .popup-content .content-center .receive-new-code {
+              margin-bottom: 10px; } }
           .popup .popup-inner .popup-content .content-center .receive-new-code a {
             font-size: 12px;
             font-family: 'PostGrotesk-Medium';
@@ -1220,11 +1223,18 @@ body {
           .popup .popup-inner .popup-content .content-center .receive-new-code .sms-code i {
             margin-right: 5px;
             color: #6ec0e6; }
+          @media screen and (max-width: 767px) {
+            .popup .popup-inner .popup-content .content-center .receive-new-code .sms-code {
+              display: block; } }
           .popup .popup-inner .popup-content .content-center .receive-new-code .call-code {
             float: right; }
             .popup .popup-inner .popup-content .content-center .receive-new-code .call-code i {
               margin-right: 5px;
               color: #6ec0e6; }
+            @media screen and (max-width: 767px) {
+              .popup .popup-inner .popup-content .content-center .receive-new-code .call-code {
+                float: none;
+                display: block; } }
     .popup .popup-inner .popup-footer {
       padding: 20px; }
       .popup .popup-inner .popup-footer button {

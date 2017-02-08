@@ -1463,6 +1463,9 @@ body{
 	    			font-family: 'PostGrotesk-Medium';
 	    			color:#81909b;
 	    			margin-top: 5px;
+	    				@media screen and (max-width: $mobile) {
+		    				margin-bottom: 10px;
+		    			}
 	    			a{
 	    				font-size: 12px;
 		    			font-family: 'PostGrotesk-Medium';
@@ -1474,6 +1477,9 @@ body{
 	    					margin-right: 5px;
 	    					color:$darkBlue;
 	    				}
+	    				@media screen and (max-width: $mobile) {
+		    				display:block;
+		    			}
 	    			}
 	    			.call-code{
 	    				i{
@@ -1481,6 +1487,10 @@ body{
 	    					color:$darkBlue;
 	    				}
     					float: right;
+    					@media screen and (max-width: $mobile) {
+		    				float: none;
+		    				display:block;
+		    			}
 	    			}
 	    		}
 	    	}
@@ -1544,6 +1554,5 @@ body{
     			font-size: 12;
 			}
 		}
-	}
-	
+	}	
 }
